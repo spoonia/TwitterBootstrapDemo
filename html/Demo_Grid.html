@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Four Column Convertible Layout</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .row > div {
+            margin-bottom: 15px;
+        }
+
+        .header {
+            min-height: 90px;
+        }
+
+        .footer {
+            min-height: 60px;
+        }
+
+        .header, .footer {
+            background: #2f2f2f;
+        }
+
+        .sidebar {
+            background: #dbdfe5;
+        }
+
+        .intro {
+            background: #7e8aa0;
+            min-height: 250px;
+        }
+
+        .section {
+            min-height: 150px;
+            background: #dbdfe5;
+        }
+
+        .section.bg-alt {
+            background: #b4bac0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="header"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="intro"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="section"></div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="section bg-alt"></div>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="section"></div>
+        </div>
+        <div class="col-sm-6 col-md-12 col-lg-3">
+            <div class="section bg-alt"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="footer"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
