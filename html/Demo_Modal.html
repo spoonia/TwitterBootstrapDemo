@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Modal Demo</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#myModal").modal('show');
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+
+    <div id="myModal" class="modal fade">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <span type="button" class="close" data-dismiss="modal">X</span>
+                    <h4 class="modal-title">Confirmation</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+
+                    <p class="text-warning">
+                        <small>If you don't save, your changes will be lost.</small>
+                    </p>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
