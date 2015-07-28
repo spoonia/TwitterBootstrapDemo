@@ -48,32 +48,32 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <div class="header"></div>
+            <div class="header text-center text-danger" style="font-size: large">Header</div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <div class="intro"></div>
+            <div class="intro text-center text-danger" style="font-size: large">Intro</div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="section"></div>
+            <div class="section text-justify">This was my live experience with Mongo when I felt need of something like Delayed Replica. I had a Mongo ReplicaSet setup for some client with 3 nodes – 1 Primary and 2 Secondaries. It is known that whatever is written to Primary’s Oplog, is replicated to the secondaries immediately without any lag or lag of some milliseconds (as per network capacity). Any disastrous command if issued by mistake on Primary will also impact the data residing in secondaries. That is what happened !! Someone having root rights inadvertently issued a ‘drop’ command on Primary which made complete application to go down since it also wiped out all the data on Secondaries too. To avoid such ‘harmful replication’, we should choose to implement a Delayed Replica Node in our setup</div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="section bg-alt"></div>
+            <div class="section bg-alt text-center text-danger" style="font-size: large">1</div>
         </div>
         <div class="clearfix visible-sm-block"></div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="section"></div>
+            <div class="section text-center text-danger" style="font-size: large">2</div>
         </div>
         <div class="col-sm-6 col-md-12 col-lg-3">
-            <div class="section bg-alt"></div>
+            <div class="section bg-alt text-center text-danger" style="font-size: large">3</div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <div class="footer"></div>
+            <div class="footer text-center text-danger" style="font-size: large">Footer</div>
         </div>
     </div>
 </div>
